@@ -1,2 +1,2 @@
-# GalliumMindBot
-This is my first Discord Bot for my clan TheFriendTreeHouse server.
+# Discord-Bot-Galliummind
+ Discord Bot for The FriendTreehouse. Used to organize members into families. 
