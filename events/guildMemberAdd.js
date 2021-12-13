@@ -4,8 +4,8 @@ module.exports =  {
 	name: 'guildMemberAdd',
 	once: false,
 	async execute(guildMemberAdd) {
-
 		console.log('eventhandler, guildMemberAdd.js is detecting.');
+		
 		const EmbedWelcomeMessage = new MessageEmbed()
 		// .setColor('#0099ff')
 		.setTitle('Welcome to The Treehouse! 🌳')
@@ -43,10 +43,8 @@ module.exports =  {
 		// .addField('Inline field title', 'Some value here', true)
 		// .setImage('https://i.imgur.com/AfFp7pu.png')
 		// .setTimestamp()
-		// .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
-		
-		const channel = guildMemberAdd.client.channels.cache.get('875933356620144722');
-		channel.send({ embeds: [EmbedWelcomeMessage] });
+		// .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');\
+		guildMemberAdd.user.send({ embeds: [EmbedWelcomeMessage] });
 		// createClanChannel(guildMemberAdd);
 	}
 };
