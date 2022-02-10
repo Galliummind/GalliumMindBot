@@ -1,12 +1,11 @@
 // https://stackoverflow.com/questions/9901082/what-is-this-javascript-require From what I can understand the required('discord.js') is loading the module saved in the
 //node_modules files in a way that will make it globally accessible to javascript file. Use the website for more references.  
 // require the necessary discord.js classes
-
 // fs is Node's native file system module. Collection is a class that extends JavaScript's native Map class, and includes more extensive, useful functionality.
+
 const fs  = require ('fs');
 const {Client, Collection, Intents, Message, MessageEmbed, Permissions} = require ('discord.js');
 const {token} = require ('./config.json');
-const moduleClanFunctions = require('./clanFunctions.js');
 
 const myIntents = new Intents();
 myIntents.add(Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS);
